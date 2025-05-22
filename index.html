@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Venda de Motos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+            <span>MENU</span>
+        </div>
+        <div class="logo">
+            <i class="fas fa-motorcycle"></i>
+            <span>MotoXtreme</span>
+        </div>
+        <div class="find-dealer">
+            <button><i class="fa fa-map-marker-alt"></i>Encontrar uma Concessionária</button>
+        </div>
+    </header>
+
+    <nav class="side-nav" id="side-nav">
+        <div class="close-btn" id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="nav-list">
+            <li><a href="cadastra_cliente.html"><i class="fa fa-user-plus"></i> Cadastro de Cliente</a></li>
+            <li><a href="cadastra_func.html"><i class="fa fa-user-tie"></i> Cadastro de Funcionário</a></li>
+            <li><a href="cadastra_produto.html"><i class="fa fa-motorcycle"></i> Cadastro de Produto</a></li>
+            <li><a href="listar_func.php"><i class="fa fa-user-edit"></i> Alterar/Deletar Funcionário</a></li>
+            <li><a href="listar_cliente.php"><i class="fa fa-user-times"></i> Alterar/Deletar Cliente</a></li>
+            <li><a href="listar_produto.php"><i class="fa fa-edit"></i> Alterar/Deletar Produto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="highlight">
+            <h2>Motos em destaque</h2>
+            <div class="carousel-container">
+                <button class="carousel-button left" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="imagem/moto1.png" alt="R3 ABS">
+                        <p>R3 ABS 2025<br>A partir de R$ 34.190,00</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/moto2.png" alt="MT-09 ABS">
+                        <p>MT-09 ABS<br>A partir de R$ 60.890,00</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/moto3.png" alt="R3 MONSTER ABS">
+                        <p>R3 MONSTER ABS<br>A partir de R$ 34.090,00</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/moto4.png" alt="Crosser S ABS">
+                        <p>Crosser S ABS<br>A partir de R$ 20.190,00</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/moto5.png" alt="XMAX ABS">
+                        <p>XMAX ABS<br>A partir de R$ 31.990,00</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/moto6.png" alt="FACTOR 125i UBS">
+                        <p>FACTOR 125i UBS<br>A partir de R$ 15.090,00</p>
+                    </div>
+                </div>
+                <button class="carousel-button right" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <i class="fas fa-motorcycle"></i>
+            <span>MotoXtreme</span>
+        </div>
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>Siga nas redes sociais</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>MotoXtreme</h3>
+                    <ul>
+                        <li><a href="#">Modelos</a></li>
+                        <li><a href="#">MotoXtreme Store</a></li>
+                        <li><a href="#">Concessionárias</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Serviços Financeiros</a></li>
+                        <li><a href="#">Pós-Venda</a></li>
+                        <li><a href="#">Recall</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Descubra mais</h3>
+                    <ul>
+                        <li><a href="#">MotoXtreme Racing</a></li>
+                        <li><a href="#">RedRider</a></li>
+                        <li><a href="#">Harmonia no Trânsito</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <img class="icon-traffic" src="imagem/logoib.png" alt="Ícone de trânsito">
+                Paz no trânsito começa por você. | <a href="#">Política de privacidade</a> | <a href="#">Termos de
+                    uso</a> | Copyrigth &copy; MotoXtreme.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,595 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos para mensagens de confirmação */
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.success-page .success-message {
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.success-page #voltar-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #cc0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.success-page #voltar-link:hover {
+    background-color: #e60000;
+    color: #fff;
+}
+
+/* Estilos específicos para as tabelas */
+.table-geral {
+    margin: 40px auto; 
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.table-geral h1 {
+    font-size: 25px;
+    color: #cc0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-geral table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-geral th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.table-geral td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-geral .botao-deletar {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.table-geral .botao-alterar {
+    padding: 5px 10px;
+    border: none;
+    background-color: #777777;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;   
+}
+
+.table-geral .botao-deletar:hover {
+    background-color: #e60000;
+}
+
+.table-geral .botao-alterar:hover {
+    background-color: #999999;    
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle {
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle i {
+    color: #666;
+}
+
+.menu-toggle span {
+    display: flex;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo i {
+    font-size: 35px;
+    color: #000000;
+}
+
+.logo span {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+.find-dealer {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.find-dealer button {
+    background-color: transparent;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.find-dealer button:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+.find-dealer button i {
+    margin-right: 5px;
+}
+
+.side-nav {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    transition: left 0.5s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    z-index: 999;
+}
+
+.side-nav.active {
+    left: 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.nav-list li a:hover {
+    background-color: #e0e0e0;
+    border: 3px solid transparent;
+    border-radius: 6px;
+}
+
+.nav-list li a:hover .fa {
+    color: #ff4d4d;
+}
+
+.close-btn {
+    align-self: flex-end;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos do carrossel */
+.highlight {
+    padding: 40px;
+    text-align: center;
+}
+
+.highlight h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #cc000080;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    background-color: rgba(204, 0, 0, 0.8);
+}
+
+.carousel-button i {
+    font-size: 15px; 
+}
+
+.carousel-button.left {
+    left: 0;
+}
+
+.carousel-button.right {
+    right: 0;
+}
+
+/* Estilos dos formulários */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container h1 {
+    font-size: 30px;
+    color: #cc0000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container .form-row {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="tel"]:focus,
+.form-container textarea:focus {
+    border-color: #cc0000;
+    outline: none;
+}
+
+.form-container .radio-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.form-container .radio-buttons input {
+    margin-right: 5px;
+}
+
+.form-container .radio-buttons label {
+    margin-right: 20px;
+    color: #333;
+}
+
+.form-container .singUp {
+    text-align: center;
+}
+
+.form-container .singUp button {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container .singUp button:hover {
+    background-color: #e60000;
+}
+
+.form-container .fas {
+    color: #cc0000;
+}
+
+.form-container .radio-buttons input[type="radio"] {
+    display: none;
+}
+
+.form-container .radio-buttons label {
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-container .radio-buttons label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #cc0000;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.form-container .radio-buttons input[type="radio"]:checked + label:before {
+    background-color: #cc0000;
+}
+
+.form-container .radio-buttons label:last-child {
+    margin-right: 0;
+}
+
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #8a8a8a;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-color: #fff;
+}
+
+.form-container select:focus {
+    border-color: #cc0000;
+    outline: none;
+}
+
+.form-container select option {
+    color: #333;
+}
+
+.form-container select option[disabled]:first-child {
+    color: #ffffff;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #f8f8f8;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+    margin-left: 260px;
+}
+
+.logo-footer i {
+    font-size: 25px;
+    color: #000000;
+}
+
+.logo-footer span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+.logo-footer-geral {
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.logo-footer-geral i {
+    font-size: 25px;
+    color: #000000;
+}
+
+.logo-footer-geral span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-left: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.footer-content > div {
+    margin: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links div {
+    min-width: 150px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.footer-links h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #cc0000;
+}
+
+.social-media h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 5px 0 20px;
+    color: #494949;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #707070;
+    margin: 0;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #e60000;
+}
+
+.icon-traffic {
+    width: 20px;
+    height: auto;
+    margin-right: 3px;
+    vertical-align: bottom;
+}
