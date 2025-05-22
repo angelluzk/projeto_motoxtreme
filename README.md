@@ -26,6 +26,10 @@ Este projeto foi desenvolvido como **projeto acadêmico**, atividade **avaliativ
 * 👩‍💼 Cadastro de funcionários com informações profissionais.
 * 🛵 Cadastro de produtos (motos) com detalhes técnicos.
 * 🗄️ Armazenamento e manipulação de dados via **MySQL**.
+* 🔄 Funcionalidades **CRUD** para clientes, funcionários e produtos:
+  * **Listar** registros cadastrados.
+  * **Editar** informações existentes.
+  * **Deletar** registros indesejados.
 * 🖥️ Interfaces simples e funcionais para interação com o sistema.
 
 ---
